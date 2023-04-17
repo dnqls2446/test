@@ -31,3 +31,35 @@ h2 {
 p {
   font-size: 22px;
 }
+
+.kolon-cttd-board {
+  max-width: 1000px;
+  width: 50%;
+  margin: 100px auto;
+}
+
+.kolon-cttd-board__text {
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.kolon-cttd-board__inputbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.input-holoder {
+  width: 80%;
+  padding: 25px;
+}
+
+.input-btn {
+  width: 10%;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+}
