@@ -1,0 +1,93 @@
+body {
+  background-color: beige;
+}
+
+// 게시판
+
+.kolon-cttd-board {
+  max-width: 1000px;
+  width: 50%;
+  margin: 100px auto;
+
+  &__text {
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+    width: 1000px;
+  }
+  &__inputbox {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 1000px;
+    height: 100px;
+    border: none;
+    background-color: #fff;
+
+    .input-holoder {
+      width: 100%;
+      padding: 25px;
+      border: none;
+      background-color: #fff;
+    }
+    .input-btn {
+      width: 150px;
+      background-color: #000;
+      color: #fff;
+      font-size: 13px;
+      margin-left: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 1000px;
+  }
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    padding: 40px 0 40px 40px;
+  }
+
+  .review-box {
+    &-text {
+      width: 650px;
+    }
+  }
+  .review-info {
+    width: 250px;
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      width: 100%;
+      text-align: end;
+
+      .kolon-cttd-fix-text {
+        overflow: hidden;
+        border: 0;
+        position: absolute;
+        z-index: -1;
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        -webkit-clip-path: inset(50%);
+        clip-path: inset(50%);
+      }
+    }
+
+    &__id {
+      width: 20%;
+    }
+    &__date {
+      width: 20%;
+      margin-left: 40px;
+    }
+  }
+}
