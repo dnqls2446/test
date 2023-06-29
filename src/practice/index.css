@@ -1,0 +1,188 @@
+:root {
+  --maincolor: #333;
+  --subcolor: #787878;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+table {
+  padding: 0;
+  border: 0;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 100%;
+}
+.wrap .header {
+  margin-top: 50px;
+  width: 920px;
+  margin: 0 auto;
+}
+.wrap .header .header-inner {
+  position: relative;
+  width: 100%;
+  height: 255px;
+}
+.wrap .header .header-inner img {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+.wrap .header .header-inner__text {
+  display: inline-block;
+  position: relative;
+  z-index: 4;
+  margin-top: 55px;
+}
+.wrap .header .header-inner__text h2 {
+  margin: 0;
+  font-size: 40px;
+  color: var(--maincolor);
+}
+.wrap .header .header-inner__text p {
+  font-size: 14px;
+  color: var(--subcolor);
+  margin: 15px 0 0 0;
+}
+.wrap .contents {
+  width: 920px;
+  margin: 0 auto;
+}
+.wrap .contents .section {
+  width: 100%;
+}
+.wrap .contents .section .tab-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.wrap .contents .section .tab-list__item {
+  width: 145px;
+  height: 50px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 50px;
+  color: #666;
+  font-weight: 600;
+  border: 1px solid #d4d7db;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.wrap .contents .section .tab-list__item:nth-child(3), .wrap .contents .section .tab-list__item:nth-child(4), .wrap .contents .section .tab-list__item:nth-child(6), .wrap .contents .section .tab-list__item:nth-child(7), .wrap .contents .section .tab-list__item:nth-child(9), .wrap .contents .section .tab-list__item:nth-child(14) {
+  color: #fff;
+  font-weight: bold;
+}
+.wrap .contents .section .tab-list__item:nth-child(3) {
+  background-color: burlywood;
+}
+.wrap .contents .section .tab-list__item:nth-child(4) {
+  background-color: rgb(36, 139, 91);
+}
+.wrap .contents .section .tab-list__item:nth-child(6) {
+  background-color: rgb(101, 53, 222);
+}
+.wrap .contents .section .tab-list__item:nth-child(7) {
+  background-color: rgba(208, 13, 78, 0.211);
+}
+.wrap .contents .section .tab-list__item:nth-child(9) {
+  background-color: rgb(208, 204, 21);
+}
+.wrap .contents .section .tab-list__item:nth-child(14) {
+  background-color: rgb(209, 45, 62);
+}
+.wrap .contents .section .article02 {
+  margin-top: 55px;
+  padding-bottom: 100px;
+}
+.wrap .contents .section .article02 .title h3 {
+  color: var(--maincolor);
+  font-size: 23px;
+}
+.wrap .contents .section .article02 .title .sub-text {
+  font-size: 14px;
+  color: var(--subcolor);
+  margin: 50px 0;
+}
+.wrap .contents .swiper {
+  width: 100%;
+  height: 100%;
+}
+.wrap .contents .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .contents .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrap .contents .autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+.wrap .contents .autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+.wrap .contents table {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 2px solid #7b8290;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.wrap .contents table th {
+  background-color: #f5f5f5;
+  color: #454545;
+  padding: 14px 0 13px;
+  text-align: center;
+  border-right: 1px solid #eaebed;
+  border-bottom: 1px solid #cacaca;
+}
+.wrap .contents table .left {
+  padding: 14px 15px;
+  border-bottom: 1px solid #cacaca;
+}/*# sourceMappingURL=index.css.map */

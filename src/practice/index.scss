@@ -1,0 +1,208 @@
+:root {
+  --maincolor: #333;
+  --subcolor: #787878;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+table {
+  padding: 0;
+  border: 0;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 100%;
+
+  .header {
+    margin-top: 50px;
+    width: 920px;
+    margin: 0 auto;
+
+    .header-inner {
+      position: relative;
+      width: 100%;
+      height: 255px;
+
+      img {
+        position: absolute;
+        left: 0;
+        z-index: 3;
+      }
+
+      &__text {
+        display: inline-block;
+        position: relative;
+        z-index: 4;
+        margin-top: 55px;
+        h2 {
+          margin: 0;
+          font-size: 40px;
+          color: var(--maincolor);
+        }
+        p {
+          font-size: 14px;
+          color: var(--subcolor);
+          margin: 15px 0 0 0;
+        }
+      }
+    }
+  }
+
+  .contents {
+    width: 920px;
+    margin: 0 auto;
+
+    .section {
+      width: 100%;
+
+      .tab-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 100%;
+
+        &__item {
+          width: 145px;
+          height: 50px;
+          text-align: center;
+          font-size: 15px;
+          line-height: 50px;
+          color: #666;
+          font-weight: 600;
+          border: 1px solid #d4d7db;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(6),
+          &:nth-child(7),
+          &:nth-child(9),
+          &:nth-child(14) {
+            color: #fff;
+            font-weight: bold;
+          }
+          &:nth-child(3) {
+            background-color: burlywood;
+          }
+          &:nth-child(4) {
+            background-color: rgb(36, 139, 91);
+          }
+          &:nth-child(6) {
+            background-color: rgb(101, 53, 222);
+          }
+          &:nth-child(7) {
+            background-color: rgba(208, 13, 78, 0.211);
+          }
+          &:nth-child(9) {
+            background-color: rgb(208, 204, 21);
+          }
+          &:nth-child(14) {
+            background-color: rgb(209, 45, 62);
+          }
+        }
+      }
+      .article02 {
+        margin-top: 55px;
+        padding-bottom: 100px;
+
+        .title {
+          h3 {
+            color: var(--maincolor);
+            font-size: 23px;
+          }
+          .sub-text {
+            font-size: 14px;
+            color: var(--subcolor);
+            margin: 50px 0;
+          }
+        }
+      }
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: var(--swiper-theme-color);
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: var(--swiper-theme-color);
+      fill: none;
+      stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-top: 2px solid #7b8290;
+      box-sizing: border-box;
+      font-size: 14px;
+      th {
+        background-color: #f5f5f5;
+        color: #454545;
+        padding: 14px 0 13px;
+        text-align: center;
+        border-right: 1px solid #eaebed;
+        border-bottom: 1px solid #cacaca;
+      }
+      .left {
+        padding: 14px 15px;
+        border-bottom: 1px solid #cacaca;
+      }
+    }
+  }
+}
