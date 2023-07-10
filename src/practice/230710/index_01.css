@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+}
+
+ul,
+li,
+ol,
+dl {
+  list-style: none;
+}
+
+.table-wrap {
+  width: 800px;
+  margin: 100px auto;
+}
+.table-wrap table {
+  width: 100%;
+  border: 1px solid rgba(142, 208, 249, 0.8666666667);
+}
+.table-wrap th,
+.table-wrap td {
+  border: 1px solid rgba(142, 208, 249, 0.8666666667);
+}/*# sourceMappingURL=index_01.css.map */

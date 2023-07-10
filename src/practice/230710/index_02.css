@@ -1,0 +1,20 @@
+.table-wrap {
+  width: 600px;
+  margin: 100px auto;
+}
+.table-wrap table {
+  width: 100%;
+  border: 1px solid #000;
+}
+.table-wrap table th,
+.table-wrap table td {
+  border: 1px solid #000;
+}
+.table-wrap table thead {
+  background-color: blue;
+  color: #fff;
+}
+.table-wrap table .common {
+  text-align: center;
+  background-color: rgba(107, 201, 244, 0.8666666667);
+}/*# sourceMappingURL=index_02.css.map */

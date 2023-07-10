@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <link rel="stylesheet" href="index_02.css" />
+  </head>
+  <body>
+    <div class="table-wrap">
+      <table cellpadding="5">
+        <thead>
+          <tr>
+            <th colspan="3">오늘의 수입/지출</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="common">
+            <td>내용</td>
+            <td>수입</td>
+            <td>지출</td>
+          </tr>
+          <tr>
+            <td>월급!</td>
+            <td>1,000,000</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>점심값</td>
+            <td></td>
+            <td>5,000</td>
+          </tr>
+          <tr>
+            <td>부모님선물</td>
+            <td></td>
+            <td>30,000</td>
+          </tr>
+          <tr>
+            <td rowspan="3" class="common">총계</td>
+            <td>수입</td>
+            <td>지출</td>
+          </tr>
+          <tr>
+            <td>1,000,000</td>
+            <td>35,000</td>
+          </tr>
+          <tr>
+            <td>남은돈</td>
+            <td>965,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form action="#" method="post">
+        이름 : <input type="text" name="MyName" /> 비밀번호 :
+        <input type="password" name="password" />
+        <br /><br />
+        <input type="radio" name="food" value="치킨" />치킨
+        <input type="radio" name="food" value="자장면" />자장면
+        <input type="radio" name="food" value="피자" />피자
+        <input type="radio" name="food" value="라면" />라면 <br /><br />
+        <input type="checkbox" name="computer" value="ssd" />ssd
+        <input type="checkbox" name="computer" value="hdd" />hdd
+        <input type="checkbox" name="computer" value="메모리" />메모리
+        <input type="checkbox" name="computer" value="cpu" />cpu <br /><br />
+        
+      </form>
+    </div>
+  </body>
+</html>

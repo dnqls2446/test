@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+}
+
+ul,
+li,
+ol,
+dl {
+  list-style: none;
+}
+
+.table-wrap {
+  width: 800px;
+  margin: 100px auto;
+
+  table {
+    width: 100%;
+    border: 1px solid #8ed0f9dd;
+  }
+
+  th,
+  td {
+    border: 1px solid #8ed0f9dd;
+  }
+}
